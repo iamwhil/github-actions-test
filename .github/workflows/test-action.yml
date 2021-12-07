@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Copy In Repo
         uses: actions/checkout@v1
-      - name: List Files
+      - name: List Files after copy
         run: |
           pwd
-          ls
+          ls -a
       - name: echo a strinng
         run: echo "oh hello"
       - name: multiline scripting yo
