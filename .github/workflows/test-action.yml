@@ -10,9 +10,9 @@ jobs:
         run: |
           pwd
           ls -a
-          $GITHUB_SHA
-          $GITHUB_REPOSITORY
-          $GITHUB_WORKSPACE
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
           echo "${{ github.token }}"
       - name: echo a strinng
         run: echo "oh hello"
