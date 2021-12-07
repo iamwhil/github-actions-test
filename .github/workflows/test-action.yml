@@ -4,6 +4,8 @@ jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
     steps:
+      - name: Copy In Repo
+        uses: actions/checkout@v1
       - name: List Files
         run: |
           pwd
