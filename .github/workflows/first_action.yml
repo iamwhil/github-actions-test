@@ -1,13 +1,13 @@
-name: Actions Workflow
-on: []
-jobs:
-  run-github-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: simple JS Action
-        uses: actions/hello-world-javascript-action@v1
-        id: sweet_id
-        with:
-          who-to-greet: John
-      - name: Log Greeting Time
-        run: echo "${{ steps.sweet_id.outputs.time }}"
+# name: Actions Workflow
+# on: [push]
+# jobs:
+#   run-github-actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: simple JS Action
+#         uses: actions/hello-world-javascript-action@v1
+#         id: sweet_id
+#         with:
+#           who-to-greet: John
+#       - name: Log Greeting Time
+#         run: echo "${{ steps.sweet_id.outputs.time }}"
